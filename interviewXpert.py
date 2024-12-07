@@ -7,6 +7,8 @@ from session import update_topics, get_session_history
 
 st.set_page_config(page_title="InterviewXpert",page_icon="📜")
 st.title("InterviewXpert")
+if "store" not in st.session_state:
+    st.session_state.store = {}
 
 if "topics" not in st.session_state:
     st.session_state.topics = ['None']
