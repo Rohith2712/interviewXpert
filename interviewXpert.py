@@ -5,7 +5,7 @@ from prompts import prompt, prompt_topic
 from agent import create_agent, wrap_with_history
 from session import update_topics, get_session_history
 
-st.set_page_config(page_title="InterviewXpert - Interview Question Generator")
+st.set_page_config(page_title="InterviewXpert",page_icon="📜")
 st.title("InterviewXpert")
 
 if "topics" not in st.session_state:
